@@ -4,7 +4,7 @@
 main()
 {
 	setlocale(LC_ALL, "Russian");
-	float x, y,l;
+	float x, y;
 	printf("Дано значение x = 4 \n");
 	x = 4;
 	x = x - 3; 
