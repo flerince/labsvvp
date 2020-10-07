@@ -3,11 +3,11 @@
 main()
 {
 	setlocale(LC_ALL, "Russian");
-	int a,b,c;
+	int a, b, c;
 	printf("Введите значения переменных a, b и c через пробел \n");
 	scanf_s("%d%d%d", &a, &b, &c);
-	a = a + c; 
-	c = a - c; 
+	a = a + c;
+	c = a - c;
 	a = a - c;
 	b = b + c;
 	c = b - c;
