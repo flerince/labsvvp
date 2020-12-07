@@ -4,7 +4,7 @@
 int main() {
 	setlocale(LC_ALL, "Russian");
 	int A, a, b, c,d;
-	printf("Введите целое положительное число A\n");
+	printf("Введите целое четырехзначное положительное число A\n");
 	scanf_s("%d", &A);
 	if (A >= 1000 && A <= 9999) {
 		a = A / 1000;
