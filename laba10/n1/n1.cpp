@@ -9,6 +9,6 @@ int main() {
 	scanf_s("%d%d", &A, &B);
 	if (A > 2 && B <= 3)
 		printf("Выражение A > 2 и B <= 3 истино");
-	else ("Выражение A > 2 и B <= 3 ложно");
+	else printf("Выражение A > 2 и B <= 3 ложно");
 	return 0;
 }
