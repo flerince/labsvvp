@@ -1,10 +1,9 @@
 ﻿#include <stdio.h>
 #include <locale.h>
-#include <math.h>
 
 int main() {
     setlocale(LC_ALL, "Russian");
-    int N = 366, x;
+    int x;
     printf("Введите номер дня в году (0<x<366) \n");
     scanf_s("%d", &x);
     if (x > 0 && x < 366) {
