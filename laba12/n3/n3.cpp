@@ -3,7 +3,7 @@
 
 int main() {
     setlocale(LC_ALL, "Russian");
-    int m=0, n;
+    int m, n;
     printf("Введите число от 10 до 40 включительно \n");
     scanf_s("%d", &n);
     switch (n) {
