@@ -45,5 +45,5 @@ int main() {
         printf("Север");
         break;
     }
-	return 0;
+    return 0;
 }
