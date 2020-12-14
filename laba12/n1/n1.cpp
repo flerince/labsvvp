@@ -1,11 +1,11 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <locale.h>
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Russian");
     int m, n;
-    printf("Введите значение дня и месяца \n");
-    scanf_s("%d%d", &n, &m);
+	printf("Введите значение дня и месяца \n");
+	scanf_s("%d%d", &n, &m);
     switch (n) {
     case 1:
         printf("Первое");
@@ -139,5 +139,5 @@ int main() {
         printf(" декабря");
         break;
     }
-    return 0;
-}
+	return 0;
+} 
