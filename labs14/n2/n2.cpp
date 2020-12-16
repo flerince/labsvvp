@@ -11,5 +11,6 @@ int main() {
 		A = A - B;
 	}
 	printf("B поместится в А ровно %d раз(а).\n", count);
+	printf("Незанятая часть отрезка: %d.\n", A);
 	return 0;
 }
