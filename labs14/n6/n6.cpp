@@ -2,17 +2,25 @@
 #include <locale.h>
 
 int main() {
-	setlocale(LC_ALL, "Russian");
-	int N,k=2,a=1,b=1;
-	printf("Введите число N(N>1)\n");
-	scanf_s("%d", &N);
-
-	while (N > b) {
-		b = a + b;
-		a = b - a;
-		k++;
-	}
-	if (N == b)  printf("Порядковый номер числа Фибоначчи (не считая 0): %d ", k);
-else printf("Не является числом Фибоначчи");
-	return 0;
-}
+	setlocale(LC_ALL, "Russian"); // Поддержка русского
+    const int N = 7;// Константа N
+    int i=0, j, min, buf; // Объявление переменных
+    int a[N] = {214, -8, -100, 30, 104, 54, 612}; // Неотсортированный массив
+    while (i < N - 1) {
+        j = i + 1;
+        min = i;
+        while (j < N) {
+            if (a[j] < a[min])
+                min = j;
+                j++;
+        }
+        buf = a[i];
+        a[i] = a[min];
+        a[min] = buf;
+        i++;
+    }
+        printf("Отсортированный массив: "); // Вывод надписи на экран
+        for (i = 0; i < N; i++) // Цикл - от a[0] до a[N-1], т.к. индексация начинается с нуля
+            printf("%d ", a[i]); // Выводить уже измененный массив
+        return 0;
+    }
