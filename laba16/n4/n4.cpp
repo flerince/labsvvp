@@ -9,7 +9,7 @@ int main() {
 	scanf_s("%d", &n);
 	if (n > 0) {
 		for (i = 0; i < n; i++) {
-			printf("a[%i] : ", i);
+			printf("a[%d] : ", i);
 			scanf_s("%d", &a[i]);
 		}
 		for (i = 0; i < n / 2; i++) {
